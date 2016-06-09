@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.fl {
+
+	float:left;
+}
+.fr {
+
+	float:right;
+}
+.cl {
+
+	clear:left;
+}
+.cr {
+
+	clear:right;
+}
+.cb {
+
+	clear:both;
+}
+
+html,
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	height:100%;
+}
+
+#wrapper {
+	min-height:100%;
+	position: relative;
+	padding-bottom:50px;
+	background:url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+}
+#wrapper2 {
+    min-height:100%;
+    position: relative;
+    padding-bottom:50px;
+    background:url(../images/bookatrip.jpg) no-repeat;
+    background-size: cover;
+}
+
+#header {
+
+	z-index: 1;
+	box-shadow: 0 0 8px #666;
+	width: 100%;
+}
+
+
+#wrapper img {
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+#wrapper2 img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 60px;
+}
+
+#footer {
+	width: 100%;
+	height: 50px;
+	color:#CCCCCC;
+	background-color: #602826;
+	bottom: 0;
+	position: absolute;
+}
+
+#footer img {
+	float:left;
+	padding-right: 10px;
+	width: 40px;
+	height: 40px;
+}
+#asd   {
+    width: 180px;
+}
+#top {
+	width: 100%;
+	height: 20px;
+	background-color: #602826;
+}
+
+#app {
+	width: 80%;
+	margin: 0;
+}
+
+#logo img {
+	display: block;
+	margin: 0 auto;
+	height: 275px;
+}
+#booklogo img   {
+    display:block;
+    margin: 0 auto;
+    position: relative;
+}
+
+tr.border{
+    outline: thin solid;
+	padding-bottom: 10px;
+}
+
+/*====================================================*/
+/*===================== Nav Menu =====================*/
+/*====================================================*/
+
+nav {
+	width: 100%;
+	height: 30px;
+	background-color: #57769d;
+	border:1px solid #000000;
+	font: bold 0.8em sans-serif;
+
+}
+
+.navbar-default {
+    background-color: #57769d;
+    border:1px solid #000000;
+}
+
+/*.navbar-default .navbar-nav    {*/
+    /*color: black;*/
+/*}*/
+
+/*.navbar-custom {*/
+    /*background-color: #57769d;*/
+/*}*/
+
+.nav.navbar-nav.nav-pills-justified li a {
+    color: black;
+    border-right: 1px solid #000000;
+
+}
+.nav.navbar-nav.nav-pills-justified li a:hover {
+    color: #602826;
+    font-size: 18px;
+}
+.nav.navbar-nav.nav-pills-justified li:last-child a {
+    border-right: none;
+}
+
+.navbar {
+    margin-bottom: 0;
+    display: inline-block;
+    float: none;
+}
+nav ul {
+
+}
+
+/* LEVEL ONE */
+
+ul.dropdown {
+	position:relative;
+	z-index: 1;
+}
+
+ul.dropdown li {
+	width: 148px;
+	list-style: none;
+	text-align: center;
+	float: left;
+	zoom: 1;
+}
+
+ul.dropdown a:hover {
+	color: #602826;
+	line-height: 30px;
+	font-size: 1.2em;
+}
+
+ul.dropdown a:active {
+	color: #ffa500;
+}
+
+ul.dropdown a:link {
+	text-decoration: none;
+}
+
+ul.dropdown li a {
+	display: block;
+	line-height: 30px;
+	border-right: 1px solid #000000;
+	color: #222;
+}
+
+ul.dropdown li:last-child a {
+	border-right: none;
+} /* Doesn't work in IE */
+
+ul.dropdown li.hover, ul.dropdown li:hover {
+	color: black;
+	position: relative;
+}
+
+/*ul.dropdown li.hover a {*/
+	/*color: #fffff;*/
+/*}*/
+
+
+/* LEVEL TWO */
+
+ul.dropdown ul {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+ul.dropdown ul li {
+	font-weight: bold;
+	float: none;
+	background-color: #57769d;
+	border: 1px solid #000000;
+}
+
+/* IE 6 & 7 Needs Inline Block */
+
+ul.dropdown ul li a	{
+	border-right: none;
+	width: 100%;
+	display: inline-block;
+}
+
+/* LEVEL THREE */
+
+ul.dropdown ul ul {
+	left: 100%;
+	top: 0;
+}
+
+ul.dropdown li:hover > ul {
+	visibility: visible;
+}
+
+
+/*====================================================*/
+/*=====================End of Nav Menu ===============*/
+/*====================================================*/
+
+#starter {
+	background: url(../images/Bus-Shot.jpg) no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 768px;
+	z-index: -80;
+}
+
+#starter p{
+	font-size:36px;
+	font-weight:bold;
+	color:	#602826;
+	text-align: center;
+}
+
+
+.CollapsiblePanelContent p{
+	margin-bottom: 10px;
+}
+
+#CollapsiblePanel1, #CollapsiblePanel3, #CollapsiblePanel5, #CollapsiblePanel7, #CollapsiblePanel9, #CollapsiblePanel11, #CollapsiblePanel13 {
+	background-color:#F9BDA2;
+}
+
+#CollapsiblePanel2, #CollapsiblePanel4, #CollapsiblePanel6, #CollapsiblePanel8, #CollapsiblePanel10, #CollapsiblePanel12, #CollapsiblePanel14 {
+    background-color: #FFE6C6;
+}
+
