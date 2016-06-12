@@ -28,6 +28,11 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
 
+
+    <!--<link href="scripts/style.css" rel="stylesheet" type="text/css"/>-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <!--<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
 
     <link href="scripts/style.css" rel="stylesheet" type="text/css"/>
@@ -42,60 +47,75 @@
     <div class="col-md-4">
     </div>
     <div class="col-md-4 text-center">
-        <br />
-        <a href="index.html"><img src="images/FirstClass_Logo.jpg"  height="120" alt="" style="border: 1px solid black"/></a>
-        <br />
-        <form method="POST" id="bookatrip">
-            <div id="booktripheader">
-                <br/>
-                <h1>Book Your Trip Today!</h1>
-                <br />
+        <br/>
+        <a href="index.html"><img src="images/FirstClass_Logo.jpg" height="120" alt="" style="border: 1px solid black"/></a>
+        <br/>
+        <!--<form method="POST" id="bookatrip">-->
+        <div id="booktripheader">
+            <br/>
+            <h1>Book Your Trip</h1>
+            <br/>
+        </div>
+        <div id="booktripbody">
+            <br/>
+            <div class="btn-toolbar" data-toggle="buttons">
+                <label class="btn btn-danger" style="border: 1px solid white">
+                    <input type="radio" name="options" id="roundtrip" autocomplete="off"> Round Trip
+                </label>
+                <label class="btn btn-danger" style="border: 1px solid white">
+                    <input type="radio" name="options" id="oneway" autocomplete="off"> One Way
+                </label>
             </div>
-            <div id="booktripbody">
-                <br />
-                <a href="#" class="btn btn-danger checked" role="button">Round Trip</a>
-                <a href="#" class="btn btn-danger" role="button">One Way</a>
-                <br />
-                <br />
-                From&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To
-                <br/>
-                <div class="input-group" style="margin-left: 20px;">
-                    <input type="text" class="form-control" id="asd"/>
+            <br/>
+            <br/>
+            From&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To
+            <br/>
+            <div class="input-group" style="margin-left: 20px;">
 
-                    <input type="text" class="form-control" id="asd"/>
-                </div>
-                <br/>
-                Depart Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return
-                Date
-                <div class="input-group" style="margin-left: 20px;">
-                    <input type="date" class="form-control" id="asd"/>
-                    <input type="date" class="form-control" id="asd"/>
-                </div>
-                <br />
-                <br />
-                <select id="passengers" class="form-control text-center" style="width: 200px; margin-left: 100px;">
-                    <option>Number of Passengers</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
+                <select class="form-control" id="asd">
+                    <option></option>
+                    <option>BOSTON, MA</option>
+                    <option>FORT LEE, NJ</option>
+                    <option>HACKENSACK, NJ</option>
+                    <option>NEWARK, NJ</option>
+                    <option>NEY YORK CITY, NY</option>
+                    <option>NORTH ARLINGTON, NJ</option>
+                    <option>PHILADELPHIA, PA</option>
+                    <option>WASHINGTON, D.C</option>
                 </select>
-                <br />
-                <button type="button" class="btn btn-primary btn-lg active" role="button">Submit</button>
-                <br/>
-                <br/>
+
+                <input type="text" class="form-control" id="asd"/>
             </div>
-        </form>
+            <br/>
+            Depart Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return
+            Date
+            <div class="input-group" style="margin-left: 20px;">
+                <input type="date" class="form-control" id="asd"/>
+                <input type="date" class="form-control" id="asd"/>
+            </div>
+            <br/>
+            <br/>
+            <select id="passengers" class="form-control text-center" style="width: 200px; margin-left: 100px;">
+                <option>Number of Passengers</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <br/>
+            <button type="button" class="btn btn-primary btn-lg active" role="button">Submit</button>
+            <br/>
+            <br/>
+        </div>
+        <!--</form>-->
     </div>
     <div class="col-md-4"></div>
-
-
 
 
 </div>
