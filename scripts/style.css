@@ -57,6 +57,7 @@ body {
 	padding-bottom:50px;
 	background:url(../images/bg.jpg) no-repeat;
 	background-size: cover;
+    margin-bottom: 60px;
 }
 #wrapper2 {
     min-height:100%;
@@ -83,7 +84,6 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    margin-bottom: 60px;
 }
 
 #footer {
@@ -91,8 +91,12 @@ body {
 	height: 50px;
 	color:#CCCCCC;
 	background-color: #602826;
-	bottom: 0;
-	position: absolute;
+
+	/*bottom: 0;*/
+	/*position: absolute;*/
+}
+#footer, .push {
+    clear: both;
 }
 
 #footer img {
@@ -130,6 +134,33 @@ tr.border{
     outline: thin solid;
 	padding-bottom: 10px;
 }
+#bookatrip  {
+    border: 2px solid black;
+}
+#booktripheader {
+    background-color: #602826;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#booktripbody   {
+    background-color: #57769d;
+}
+#booktripbody input   {
+    background-color: #602826;
+    border: 1px solid white;
+    color: white;
+
+}
+#booktripbody select   {
+    background-color: #602826;
+    border: 1px solid white;
+    color: white;
+}
+.btn-danger { border-color: white; background-color: #602826; }
+
+.btn-danger:hover { border-color: white; background-color: maroon;}
 
 /*====================================================*/
 /*===================== Nav Menu =====================*/
