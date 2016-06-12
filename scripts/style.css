@@ -162,6 +162,9 @@ tr.border{
 
 .btn-danger:hover { border-color: white; background-color: maroon;}
 
+.btn-toolbar {
+    display: inline-block;
+}
 /*====================================================*/
 /*===================== Nav Menu =====================*/
 /*====================================================*/
