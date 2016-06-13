@@ -6,13 +6,13 @@ var select2 = document.getElementById('select2');
 // Value: Array of city destinations
 var config = {
     'BOSTON, MA': ['FORT LEE, NJ', 'HACKENSACK, NJ', "NEWARK, NJ", "NORTH ARLINGTON, NJ"],
-    'FORT LEE, NJ': ["BOSTON, MA","WASHINGTON, DC"],
-    'HACKENSACK, NJ': ["BOSTON, MA","WASHINGTON, DC"],
-    'NEWARK, NJ': ["BOSTON, MA","WASHINGTON, DC"],
-    'NORTH ARLINGTON, NJ': ["BOSTON, MA","WASHINGTON, DC"],
+    'FORT LEE, NJ': ["BOSTON, MA","WASHINGTON, D.C"],
+    'HACKENSACK, NJ': ["BOSTON, MA","WASHINGTON, D.C"],
+    'NEWARK, NJ': ["BOSTON, MA","WASHINGTON, D.C"],
+    'NORTH ARLINGTON, NJ': ["BOSTON, MA","WASHINGTON, D.C"],
     'NEW YORK CITY, NY': ['PHILADELPHIA, PA'],
     'PHILADELPHIA, PA': ['NEW YORK CITY, NY'],
-    'WASHINGTON D.C.': ['NEWARK, NJ','NORTH ARLINGTON, NJ','HACKENSACK, NJ','FORT LEE, NJ']
+    'WASHINGTON D.C': ['NEWARK, NJ','NORTH ARLINGTON, NJ','HACKENSACK, NJ','FORT LEE, NJ']
 }
 
 // add item method
