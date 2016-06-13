@@ -134,6 +134,7 @@ tr.border{
 }
 #bookatrip  {
     border: 2px solid black;
+    display: inline-block;
 }
 #booktripheader {
     background-color: #602826;
@@ -144,7 +145,7 @@ tr.border{
 
 #booktripbody   {
     background-color: #57769d;
-    display: inline-block;
+
 }
 #booktripbody input   {
     background-color: #602826;
@@ -156,6 +157,13 @@ tr.border{
     background-color: #602826;
     border: 1px solid white;
     color: white;
+}
+.input-group    {
+    display: inline-block;
+}
+#passengers {
+    display: inline-block;
+    width: 200px;
 }
 .btn-danger { border-color: white; background-color: #602826; }
 
