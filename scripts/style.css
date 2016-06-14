@@ -172,7 +172,7 @@ tr.border{
 .btn-toolbar {
     display: inline-block;
 }
-.ui-datepicker{margin-left: -10em;}
+.ui-datepicker{left: 50% !important; margin-left: -25.5em !important;}
 /*====================================================*/
 /*===================== Nav Menu =====================*/
 /*====================================================*/
