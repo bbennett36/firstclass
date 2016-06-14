@@ -1,0 +1,1 @@
+Working on a website for a friend of mine. Most of the front end work was done. I am working on making the book a trip page and scheduling page at the moment while also taking care of the back end. Then I will start updating the front-end and make the site look more modern and professional.
