@@ -172,6 +172,13 @@ tr.border{
 .btn-toolbar {
     display: inline-block;
 }
+#datepicker-container{
+    text-align:center !important;
+}
+#datepicker-center{
+    display:inline-block !important;
+    margin:0 auto !important;
+}
 /*====================================================*/
 /*===================== Nav Menu =====================*/
 /*====================================================*/
